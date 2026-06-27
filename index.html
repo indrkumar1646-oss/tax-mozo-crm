@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tax Mozo - Your Tax Advisory Partner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      .hero-section {
+        background: linear-gradient(135deg, #0f7b6c 0%, #1a9d89 100%);
+        color: white;
+        padding: 100px 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .hero-content h1 { font-size: 3rem; font-weight: 700; margin-bottom: 20px; }
+      .hero-content p { font-size: 1.25rem; margin-bottom: 30px; }
+      .cta-button { padding: 12px 30px; font-size: 1.1rem; border-radius: 8px; }
+    </style>
+  </head>
+  <body>
+    <div id="top-nav"></div>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="hero-content">
+              <h1>Tax Mozo</h1>
+              <p>Your Complete Tax Advisory & Compliance Partner</p>
+              <p class="text-light">Simplify your business registration, tax filing, and compliance needs with our comprehensive suite of services.</p>
+              <div class="mt-4">
+                <a href="services.html" class="btn btn-light cta-button me-3">Explore Services</a>
+                <a href="login.html" class="btn btn-outline-light cta-button">Login</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div style="font-size: 80px; opacity: 0.3;">📊</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background: #f9f9f9;">
+      <div class="container">
+        <h2 class="mb-5 text-center">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card p-4 text-center h-100">
+              <div style="font-size: 50px; margin-bottom: 15px;">🏢</div>
+              <h5>Entity Registrations</h5>
+              <p class="text-muted small">Company formation, partnerships, and business registration</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 text-center h-100">
+              <div style="font-size: 50px; margin-bottom: 15px;">📋</div>
+              <h5>Licenses & Registrations</h5>
+              <p class="text-muted small">GST, FSSAI, IEC, and trade licenses</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 text-center h-100">
+              <div style="font-size: 50px; margin-bottom: 15px;">💰</div>
+              <h5>Tax Filing & Compliance</h5>
+              <p class="text-muted small">Income tax returns and annual compliance support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Check if user is logged in
+      document.addEventListener('DOMContentLoaded', () => {
+        const user = localStorage.getItem('tp_currentUser');
+        const topNav = document.getElementById('top-nav');
+        if(topNav && user) {
+          // Optionally inject nav for logged-in users
+        }
+      });
+    </script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

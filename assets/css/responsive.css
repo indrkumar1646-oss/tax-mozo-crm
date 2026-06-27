@@ -1,0 +1,4 @@
+@media (max-width:768px){
+  .auth-card{margin-top:3rem;padding:1rem}
+  .service-card .btn{width:100%}
+}
